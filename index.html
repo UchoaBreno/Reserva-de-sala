@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+ 
+
+
+	<title>Página de reserva</title>
+</head>
+
+
+
+<body>
+	<header>
+    <!-- botei o link aqui para criar um redirecionamento ao portal inicial da Afya -->
+    <a href="https://www.afya.com.br/"><img src="assets/logo afya cor rosa.png" id="logo"></a>
+
+		
+		<button id="openMenu">&#9776;</button>
+		
+    <nav id="menu">
+			<button id="closeMenu">X</button>
+
+			<a href="#">Início</a>
+			<a href="#">Cursos</a>
+			<a href="#">Notícias</a>
+			<a href="#" class="estude-na-afya"><strong>Estude na Afya</strong></a>
+		</nav>
+		
+	</header>
+
+
+	<main>
+    <div class="fundo">
+          <div class="form-box login">
+
+              <h2>Digite seus dados</h2>
+<br><br>
+                <form action="#">
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="number" required>
+                        <label for="numero">Número de matricula</label>
+                      </div>
+
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-box">
+                      <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                      <input type="tel" id="telefone" name="telefone" maxlength="11" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+                      <label for="telefone">Telefone</label>
+                  </div>
+
+                    <button type="submit" class="btn"><a href="#">Reservar</a></button>
+                    <div class="registrar-login"></div>
+                </form>
+          </div>
+  </div>
+
+</main>
+
+	<footer><img class="rodape" src="assets/image.png" alt="img footer"></footer>
+  <script type="text/javascript" src="script.js"></script>
+</body>
