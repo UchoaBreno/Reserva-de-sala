@@ -1,74 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
 
-
-	<link rel="stylesheet" type="text/css" href="styles.css">
- 
-
-
-	<title>Página de reserva</title>
+    <title>Home</title>
 </head>
-
-
-
 <body>
-	<header>
-    <!-- botei o link aqui para criar um redirecionamento ao portal inicial da Afya -->
-    <a href="https://www.afya.com.br/"><img src="assets/logo afya cor rosa.png" id="logo"></a>
+    <div class="container">
 
-		
-		<button id="openMenu">&#9776;</button>
-		
-    <nav id="menu">
-			<button id="closeMenu">X</button>
+    
+        <div class="mulher">
 
-			<a href="#">Início</a>
-			<a href="#">Cursos</a>
-			<a href="#">Notícias</a>
-			<a href="#" class="estude-na-afya"><strong>Estude na Afya</strong></a>
-		</nav>
-		
-	</header>
+            <img src="assets/afya_mulher.png" alt="img">
 
+        </div>
 
-	<main>
-    <div class="fundo">
-          <div class="form-box login">
+        <header>
+            <!-- botei o link aqui para criar um redirecionamento ao portal inicial da Afya -->
+            <a href="https://www.afya.com.br/"><img src="assets/logo afya cor rosa.png" id="logo"></a>
+                
+            <nav id="menu">
+        
+                    <a href="#">Início</a>
+                    <a href="#">Cursos</a>
+                </nav>        
+            </header>
 
-              <h2>Digite seus dados</h2>
-<br><br>
-                <form action="#">
+            <div class="input-box-container">
+            <div class="input-box">
+                
+                <span class="aluno"><p>Eu sou aluno!</p></span>
+                
 
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-                        <input type="number" required>
-                        <label for="numero">Número de matricula</label>
-                      </div>
+            </div>
 
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                        <input type="email" required>
-                        <label for="email">Email</label>
-                    </div>
+            <div class="input-box">
+                    
+                <span class="funcionario"><p>Eu sou funcionário!</p></span>
 
-                    <div class="input-box">
-                      <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                      <input type="tel" id="telefone" name="telefone" maxlength="11" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+             </div>
+            </div>
+    </div>
 
-                      <label for="telefone">Telefone</label>
-                  </div>
+    <footer><p>Todos os direitos reservados. Copyright 2024/ Afya</p></footer>
 
-                    <button type="submit" class="btn"><a href="#">Reservar</a></button>
-                    <div class="registrar-login"></div>
-                </form>
-          </div>
-  </div>
-
-</main>
-
-	<footer><img class="rodape" src="assets/image.png" alt="img footer"></footer>
-  <script type="text/javascript" src="script.js"></script>
 </body>
+</html>
