@@ -69,6 +69,13 @@ header #logo {
     
 }
 
+.sala-header{
+    color: rgb(206,0,86);
+    font-weight: 800;
+    font-family: Inter;
+    word-spacing: 2px;
+}
+
 nav {
     display: flex;
 	justify-content: center;
@@ -195,32 +202,6 @@ h1{
     width: 80vw;
 }
 
-.informacoes {
-    display: flex; /* Torna o container flexível */
-    flex-direction: inline; /* Coloca os itens em uma coluna */
-    justify-content: center; /* Alinha os itens ao topo */
-    align-items: flex-start; /* Alinha os itens horizontalmente ao centro */
-    gap: 30px; /* Espaçamento entre os itens */
-    padding: 20px; /* Adiciona um espaçamento interno */
-    margin-left: 20px;
-}
-
-/* Estilos para telas menores */
-@media only screen and (max-width: 768px) {
-    .informacoes {
-        flex-direction: row; /* Altera para uma linha na horizontal */
-        align-items: flex-start; /* Alinha os itens ao topo */
-    }
-}
-
-label {
-    margin-right: 400px; /* Coloca o primeiro label à esquerda */
-}
-
-label:last-child {
-    margin-left: auto; /* Coloca o último label à direita */
-}
-
 .id {
     display: flex;
     flex-direction: column;
@@ -230,8 +211,41 @@ label:last-child {
     margin-bottom: 100px; /* Espaçamento entre os inputs */
     margin-left: 20px;
     width: 70px;
-    margin-top: 20px;
+    margin-top: 90px;
     border: none;
     box-shadow: 0 0 1px black;
     border-radius: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: none;
+    box-shadow: 0 0 1px black;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #cccccc;
+}
+
+.id{
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 170px;
+}
+
+.sala {
+    width: 70vw;
+    height: 170px; /* Defina a altura desejada para a sala */
+
+}
+
+.sala p{
+    color: rgb(206,0,86);
 }

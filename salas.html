@@ -35,6 +35,8 @@
             <nav id="menu">
        
                     <a href="#">Início</a>
+                    <a href="#"><span class="sala-header">Salas</span></a>
+                    <a href="#">Reservas</a>
                     <a href="#">Cursos</a>
                 </nav>        
             </header>
@@ -71,26 +73,39 @@
 
              
     <div class="box-salas">
-
-
-        <div class="informacoes">
-            <label for="#">ID</label>
-            <label for="#">SALA</label>
-            <label for="#">STATUS</label>
-
-
-        </div>
-
-
-        <div class="id">
-            <input type="numer" min="0" max="20">
-            <input type="numer" min="0" max="20">
-            <input type="numer" min="0" max="20">
-            <input type="numer" min="0" max="20">
-            <input type="numer" min="0" max="20">
-        </div>
-
-
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Sala</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="id">1</td>
+                    <td class="sala" class="img1" style="background-image: url('assets/sala_de_aula.jpg');"><p>SALA 101</p></td>
+                    <td>Disponível</td>
+                </tr>
+                <tr>
+                    <td class="id">2</td>
+                    <td class="sala">Sala 102</td>
+                    <td>Ocupada</td>
+                </tr>
+                <tr>
+                    <td class="id">3</td>
+                    <td class="sala">Sala 103</td>
+                    <td>Disponível</td>
+                </tr>
+                <tr>
+                    <td class="id">4</td>
+                    <td class="sala">Sala 104</td>
+                    <td>Reservada</td>
+                </tr>
+                <!-- Adicione mais linhas conforme necessário -->
+            </tbody>
+        </table>
+    </div>
     <footer><p>Todos os direitos reservados. Copyright 2024/ Afya</p></footer>
 
 
