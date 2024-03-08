@@ -1,0 +1,237 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: "Sansbeambody Bold", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+    overflow-x: hidden;
+	/* Junção de flex-grow, flex-shrink e flex-basis.  */
+	/* flex-grow – Habilidade de um flex item crescer. */
+	/* flex-shrink - Capacidade de redução do item.    */
+	/* flex-basis – Tamanho inicial do item.           */
+	flex: 1 1 100vw;
+}
+
+.container {
+    position: relative;
+    flex: 1 1 100vw;
+    height: 100vh;
+}
+
+#logo{
+    flex: 1 0 200;
+    align-items: flex-start;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+}
+
+.mulher {
+    position: absolute;
+    top: 0px;
+    left: 406px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2; /* Opacidade da imagem */
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+header {
+    display: flex;
+	flex: 1 1 100vw;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(2px);
+}
+
+header #logo {
+	display: flex;
+	align-items: center;
+    width: 80px;
+    height: 32px;
+    flex: 0 1 100px;
+    margin-top: 15px;
+    margin-left: 120px; /* Adicione margem à esquerda */
+    margin-right: 10px; /* Adicione margem à direita */
+    align-self: center; /* Alinhe verticalmente ao centro */
+    font-size: 16px;
+    vertical-align: middle;
+    
+}
+
+nav {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 200px;
+}
+
+nav a {
+	margin: 0 3%;
+	font-size: 13pt;
+    font-weight: 500;
+}
+
+h1{
+    margin-top: 20px;
+    margin-left: 100px;
+    color: #292929;
+    text-align: flex-start;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Estilo básico para a barra de pesquisa */
+.search-bar {
+    width: 300px; /* largura da barra de pesquisa */
+    padding: 10px; /* espaço interno */
+    border: 1px solid #ccc; /* borda */
+    border-radius: 20px; /* bordas arredondadas */
+    font-size: 16px; /* tamanho da fonte */
+    left: 0;
+}
+
+
+  /* Estilizando o botão de pesquisa */
+  .search-btn {
+    padding: 10px 15px; /* espaço interno */
+    background-color: rgb(206,0,86); /* cor de fundo */
+    color: #fff; /* cor do texto */
+    border: none; /* removendo a borda */
+    border-radius: 20px; /* bordas arredondadas */
+    cursor: pointer; /* cursor ao passar por cima */
+    font-size: 16px; /* tamanho da fonte */
+  }
+  
+  /* Estilizando o botão de pesquisa quando passa o mouse por cima */
+  .search-btn:hover {
+    background-color: rgb(159, 0, 66); /* cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilo para o formulário de pesquisa */
+  .search-form {
+    margin: 20px auto; /* centralizar o formulário */
+    text-align: flex-start; /* centralizar os elementos dentro do formulário */
+    margin-left: 100px;
+  }
+  
+  .filtro{
+    border:none;
+    background: rgba(240, 240, 240, 0.75);
+    box-sizing: border-box; /* Garantir que a largura e altura incluam a sombra */
+    border-radius: 10px;
+    box-shadow: 0 0 1px black;
+    cursor: pointer;
+  }
+
+
+.filtro-label {
+    position: absolute;
+    /* Estilo do texto do placeholder */
+    color: #999; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    font-style: italic; /* Estilo da fonte (itálico, por exemplo) */
+     /* Margem à direita do texto do placeholder */
+     margin-top: 12px;
+     margin-left: 5px;
+     pointer-events: none;
+     
+}
+
+
+  .floating-page {
+    height: 100px;
+    width: 140px;
+    top: 0;
+    margin-top: 165px;
+    margin-left: 425px;
+    position: absolute;
+    background: rgba(240, 240, 240, 0.75);
+    box-sizing: border-box; /* Garantir que a largura e altura incluam a sombra */
+    border-radius: 20px;
+    box-shadow: 0 0 1px black; 
+    border: none;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(2px);
+}
+
+.floating-page ul{
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.floating-page li{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.floating-page li:hover{
+    color: rgb(206,0,86);
+}
+
+.box-salas {
+    margin: 20px auto; /* Margem superior e inferior de 50px e centraliza horizontalmente */
+    display: flex; /* Torna o container flexível */
+    flex-direction: column; /* Coloca os itens em uma coluna */
+    justify-content: flex-start; /* Alinha os itens ao topo */
+    align-items: flex-start; /* Alinha os itens horizontalmente ao centro */
+    background: rgba(240, 240, 240, 0.75);
+    box-sizing: border-box; /* Garantir que a largura e altura incluam a sombra */
+    border-radius: 20px;
+    box-shadow: 0 0 1px black; 
+    height: 100vh; /* Define a altura para ocupar toda a altura da tela */
+    width: 80vw;
+}
+
+.informacoes {
+    display: flex; /* Torna o container flexível */
+    flex-direction: inline; /* Coloca os itens em uma coluna */
+    justify-content: center; /* Alinha os itens ao topo */
+    align-items: flex-start; /* Alinha os itens horizontalmente ao centro */
+    gap: 30px; /* Espaçamento entre os itens */
+    padding: 20px; /* Adiciona um espaçamento interno */
+    margin-left: 20px;
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 768px) {
+    .informacoes {
+        flex-direction: row; /* Altera para uma linha na horizontal */
+        align-items: flex-start; /* Alinha os itens ao topo */
+    }
+}
+
+label {
+    margin-right: 400px; /* Coloca o primeiro label à esquerda */
+}
+
+label:last-child {
+    margin-left: auto; /* Coloca o último label à direita */
+}
+
+.id {
+    display: flex;
+    flex-direction: column;
+}
+
+.id input {
+    margin-bottom: 100px; /* Espaçamento entre os inputs */
+    margin-left: 20px;
+    width: 70px;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 0 0 1px black;
+    border-radius: 10px;
+}

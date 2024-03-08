@@ -102,13 +102,6 @@ nav a {
 
 /* Altera o estilo dos elementos para serem apresentados */ 
 /* em telas menores que 717px. */
-@media only screen and (max-width: 717px) {
-	nav a {
-		margin: 3%;
-        font-weight: bold;
-        color: #fff;
-	}
-}
 
 
 main {

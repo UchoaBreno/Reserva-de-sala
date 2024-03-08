@@ -23,6 +23,7 @@ body {
 	flex: 1 1 100vw;
 }
 
+
 .container {
     position: relative;
     flex: 1 1 100vw;
@@ -96,8 +97,8 @@ nav a {
     box-shadow: 0 0 1px black; 
     border: none;
     background-image: url(assets/estudante.png);
-    background-size: cover;
     background-position: 50%;
+    background-size: cover;
     cursor: pointer;
 }
 
@@ -119,7 +120,7 @@ nav a {
     border-radius: 20px;
     box-shadow: 0 0 1px black; 
     border: none;
-    background-image: url(assets/professor.png);
+    background-image: url(assets/Professor.png);
     background-size: cover;
     background-position: 50%;
     cursor: pointer;
