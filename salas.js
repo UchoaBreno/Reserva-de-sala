@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var filtroInput = document.querySelector(".filtro");
 
     // Ocultando o floatingPage inicialmente
-    floatingPage.style.display = "none";
+   floatingPage.style.display = "none";
 
     // Manipulador de eventos para exibir o floatingPage quando o usuário passar o mouse sobre o campo de entrada
     filtroInput.addEventListener("mouseenter", function() {
@@ -59,4 +59,11 @@ function fecharInputBox() {
     function fecharInputBox() {
         var inputBox = document.querySelector('.input-box');
         inputBox.style.display = 'none'; // Ocultar a input-box
+    }
+
+
+    const name = document.querySelector("option-lab");
+
+    function showLabOptions() {
+        showLabOptions.style.dispay= "flex";
     }

@@ -87,22 +87,22 @@
             <tbody>
                 <tr>
                     <td class="id">1</td>
-                    <td class="sala">SALA 604B</td>
+                    <td class="sala">Laboratório C</td>
                     <td>Reservada</td>
                 </tr>
                 <tr>
                     <td class="id">2</td>
-                    <td class="sala">SALA 503F</td>
+                    <td class="sala">Auditorio 1F</td>
                     <td class="status">Indisponível</td>
                 </tr>
                 <tr>
                     <td class="id">3</td>
-                    <td class="sala">SALA 303C</td>
+                    <td class="sala">Sala 303</td>
                     <td>Disponível</td>
                 </tr>
                 <tr>
                     <td class="id">4</td>
-                    <td class="sala">SALA 101B</td>
+                    <td class="sala">Sala 101</td>
                     <td class="status">Reservada</td>
                 </tr>
 
@@ -128,20 +128,57 @@
 
     <div class="input-box" id="inputBox">
         <span class="icon-close" onclick="fecharInputBox()"><ion-icon name="close-outline"></ion-icon></span>
-        <h1>Cadastrar uma sala</h1>
         <br>
-        <span class="cadastrar-id">ID</span>
-        <input type="number" placeholder="Digite o ID" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 2)" required>
-        <br>
-        <span class="cadastrar-sala">SALA</span>
-        <input type="text" placeholder="Digite qual a sala">
+
+        <div class="container2">
+            <h1>Cadastrar uma sala</h1>
         
-        <button class="adicionar-sala">Adicionar Sala</button>
-    </div>
-    
-    </div>
+            <span class="escolha">O que quer adicionar?</span>
+            <select name="sala" id="sala">
+                <option value="lab" class="option-lab" onclick="exibirLabOptions()">Laboratório</option>
+                <option value="salas" class="option-salas">Sala</option>
+                <option value="auditorio" class="option-auditorio">Auditório</option>
+            </select>
+
+            <div id="options-container">
+
+                <div id="labOptions" class="lab-options">
+                <select name="laboratorios" id="labs">
+
+                <option value="lab">Laboratório 1</option>
+                <option value="lab">Laboratório 2</option>
+                <option value="lab">Laboratório 3</option>
+
+            </select>
+                </div>
+
+                <div id="salasOptions" class="salas-options">
+                    <select name="sala" id="salas">
+
+                        <option value="salas">Sala 1</option>
+                        <option value="salas">Sala 2</option>
+                        <option value="salas">Sala 3</option>
+        
+                    </select>
+                </div>
+
+                <div id="auditorioOptions" class="auditorios-options">
+                    <p>Opções do Auditório:</p>
+                    <br>
+                    <ul>
+                        <li>Auditório 1F</li>
+                    </ul>
+                </div>
+            </div>
 
 
+        </div>
+        
+        
+        
+
+        <br>
+</div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <footer><p>Todos os direitos reservados. Copyright 2024/ Afya</p></footer>
