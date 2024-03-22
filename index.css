@@ -139,8 +139,33 @@ nav a {
     white-space: nowrap;
 }
 
+.admin{
+    background-color:rgba(255, 255, 255, 0.9);
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px black; 
+    border: none;
+    background-image: url(assets/administrador-img.png);
+    background-position: 50%;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.admin p{
+    align-self: stretch;
+    color: #292929;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .aluno,
-.funcionario {
+.funcionario,
+.admin {
     background-color: rgba(255, 255, 255, 0.9);
     width: 200px;
     height: 300px;
@@ -153,12 +178,13 @@ nav a {
 }
 
 .aluno:hover,
-.funcionario:hover {
+.funcionario:hover,
+.admin:hover {
     transform: translateY(-10px); /* Move o elemento para frente */
 }
 
 .aluno p,
-.funcionario p {
+.funcionario p, .admin p {
     align-self: stretch;
     color: #292929;
     text-align: center;

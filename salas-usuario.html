@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-    <link rel="stylesheet" href="salas.css">
+    <link rel="icon" href="assets/Afya icon logo.png">
+    <link rel="stylesheet" href="salas-usuario.css">
     <script src="salas.js"></script>
 
     <title>Salas</title>
@@ -34,17 +34,11 @@
             <!-- cabeçalho -->
             <nav id="menu">
        
-                    <a href="#">Início</a>
+                    <a href="index.html">Início</a>
                     <a href="#"><span class="sala-header">Salas</span></a>
-                    <a href="#">Reservas</a>
                     <a href="#">Cursos</a>
-                </nav>        
+                </nav>
             </header>
-
-
-
-
-
 
         <h1>Salas</h1>
 
@@ -66,12 +60,6 @@
                 </ul>
             </div>
 
-            <div class="btn-reserva"
-                ><!-- Adicione o evento de clique diretamente no botão "Adicionar Sala" -->
-                <button class="btn-adicionar" id="btnAdicionarSala"onclick="abrirInputBox(event)">Adicionar Sala</button>
-                
-            </div>
-
         </form>
 
              <!-- table salas -->
@@ -79,45 +67,46 @@
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>Vagas</th>
                     <th>Sala</th>
                     <th>Status</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="id">1</td>
+                    
+                    <td class="vagas">50</td>
                     <td class="sala">Laboratório C</td>
                     <td>Reservada</td>
                 </tr>
                 <tr>
-                    <td class="id">2</td>
+                    <td class="vagas">99</td>
                     <td class="sala">Auditorio 1F</td>
                     <td class="status">Indisponível</td>
                 </tr>
                 <tr>
-                    <td class="id">3</td>
+                    <td class="vagas">30</td>
                     <td class="sala">Sala 303</td>
                     <td>Disponível</td>
                 </tr>
                 <tr>
-                    <td class="id">4</td>
+                    <td class="vagas">30</td>
                     <td class="sala">Sala 101</td>
                     <td class="status">Reservada</td>
                 </tr>
 
                 <tr>
-                    <td class="id"></td>
+                    <td class="vagas"></td>
                     <td class="sala"></td>
                     <td class="status"></td>
                 </tr>
                 <tr>
-                    <td class="id"></td>
+                    <td class="vagas"></td>
                     <td class="sala"></td>
                     <td class="status"></td>
                 </tr>
                 <tr>
-                    <td class="id"></td>
+                    <td class="vagas"></td>
                     <td class="sala"></td>
                     <td class="status"></td>
                 </tr>
@@ -125,59 +114,6 @@
             </tbody>
         </table>
     </div>
-
-    <div class="input-box" id="inputBox">
-        <span class="icon-close" onclick="fecharInputBox()"><ion-icon name="close-outline"></ion-icon></span>
-        <br>
-
-        <div class="container2">
-            <h1>Cadastrar uma sala</h1>
-        
-            <span class="escolha">O que quer adicionar?</span>
-            <select name="sala" id="sala">
-                <option value="lab" class="option-lab" onclick="exibirLabOptions()">Laboratório</option>
-                <option value="salas" class="option-salas">Sala</option>
-                <option value="auditorio" class="option-auditorio">Auditório</option>
-            </select>
-
-            <div id="options-container">
-
-                <div id="labOptions" class="lab-options">
-                <select name="laboratorios" id="labs">
-
-                <option value="lab">Laboratório 1</option>
-                <option value="lab">Laboratório 2</option>
-                <option value="lab">Laboratório 3</option>
-
-            </select>
-                </div>
-
-                <div id="salasOptions" class="salas-options">
-                    <select name="sala" id="salas">
-
-                        <option value="salas">Sala 1</option>
-                        <option value="salas">Sala 2</option>
-                        <option value="salas">Sala 3</option>
-        
-                    </select>
-                </div>
-
-                <div id="auditorioOptions" class="auditorios-options">
-                    <p>Opções do Auditório:</p>
-                    <br>
-                    <ul>
-                        <li>Auditório 1F</li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div>
-        
-        
-        
-
-        <br>
 </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

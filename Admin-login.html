@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-	<link rel="stylesheet" type="text/css" href="aluno.css">
- 
+	<link rel="stylesheet" type="text/css" href="Admin-login.css">
+  <link rel="icon" href="assets/Afya icon logo.png">
 
 
-	<title>Página de reserva</title>
+	<title>Faça seu Login</title>
 </head>
 
 
@@ -35,33 +35,26 @@
     
 
           <div class="form-box">
-
-              <h1>Faça sua reserva</h1>
+             <br>
+              <h1>Faça seu login</h1>
               <h5>Informe seus dados para continuar</h5>
 <br><br>
                 <form action="#">
 
                     <div class="input-box">
-                      <span class="matricula">Matricula</span>
-                        <input type="number" required>
-                        <label for="numero">Digite o número da sua matricula</label>
-
-                      </div>
-
-                    <div class="input-box">
                       <span class="email">Email</span>
-                        <input class="" type="email" required>
-                        <label for="email">Digite seu email</label>
+                        <input class="" type="email"placeholder="Digite seu email" required>
+                        <label for="email"></label>
 
                     </div>
 
-                    <div class="input-box">
-                      <span class="telefone">Telefone</span>
-                      <input type="tel" id="telefone" name="telefone" maxlength="11" required onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-                      <label for="telefone">Digite seu número de telefone</label>
-                  
+                      <div class="input-box">
+                        <span class="senha">Senha</span>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                        <label for="senha"></label>
                     </div>
-                    <button type="submit" class="btn"><a href="salas.html">Reservar</a></button>
+
+                    <button type="submit" class="btn"><a href="reservas-adm.html">Login</a></button>
                     <div class="registrar-login"></div>
                 </form>
           </div>

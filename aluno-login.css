@@ -130,6 +130,7 @@ main {
     border-radius: 20px;
     box-shadow: 0 0 1px black; 
     border: none;
+    margin-top: -30px;
 }
 
 
@@ -159,7 +160,7 @@ main {
     padding: 10px;
     margin-left: 20px;
     height: 50px;
-    margin-top: 50px;
+    margin-top: 30px;
     position: relative;
     border-radius: 30px;
     gap: 8px;
@@ -207,6 +208,18 @@ main {
     font-weight: 500;
     line-height: normal;
 }
+.cpf{
+    margin-top: -30px;
+    font-weight: 0;
+    color: #292929;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
 
 .telefone{
     margin-top: -30px;
@@ -252,7 +265,7 @@ main {
 }
 
 .btn{
-    margin-top: 50px;
+    margin-top: 40px;
     width: 80%;
     height: 45px;
     background: rgb(206, 0, 86);

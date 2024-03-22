@@ -73,7 +73,7 @@ header #logo {
     }
 }
 
-.reservas-header{
+.sala-header{
     color: rgb(206,0,86);
     font-weight: 800;
     font-family: Inter;
@@ -133,7 +133,8 @@ h1{
 /* Estilo para o formulário de pesquisa */
 .search-form {
     margin: 20px auto; /* centralizar o formulário */
-    text-align: center; /* centralizar os elementos dentro do formulário */
+    text-align: flex-start; /* centralizar os elementos dentro do formulário */
+    margin-left: 150px;
 }
 
 @media screen and (max-width: 859px) {
@@ -156,37 +157,156 @@ h1{
         left: 0;
         margin-left: 0vw;
     }
+
+    .filtro-label {
+        position: fixed; /* Tornar a label fixa */
+        top: 125px; /* Definir a distância do topo */
+        left: 10px; /* Definir a distância da esquerda */
+        z-index: 999; /* Certificar-se de que a label esteja acima de outros elementos */
+        color: #999;
+        font-size: 14px;
+        font-style: italic;
+        pointer-events: none;
+    }
+    
+
+    .filtro{
+        position: fixed; /* Tornar a label fixa */
+        top: 140px; /* Definir a distância do topo */
+        left: 10px; /* Definir a distância da esquerda */
+        z-index: 999; /* Certificar-se de que a label esteja acima de outros elementos */
+    }
+        .floating-page {
+            /* Ajuste a posição conforme necessário */
+            top: 50%; /* Coloca o elemento no meio vertical */
+            left: 50%; /* Coloca o elemento no meio horizontal */
+            transform: translate(-300%, -50%); /* Centraliza o elemento */
+            position: fixed; /* Mude para 'fixed' para que o 'top' e 'left' funcionem corretamente */
+            display: flex;
+            /* Outras propriedades */
+            height: 200vh;
+            width: 200px;
+        }
+}
+
+.filtro {
+    border:none;
+    background: rgba(240, 240, 240, 0.75);
+    box-sizing: border-box; /* Garantir que a largura e altura incluam a sombra */
+    border-radius: 10px;
+    box-shadow: 0 0 1px black;
+    cursor: pointer;
+}
+
+.filtro-label {
+    position: absolute;
+    color: #999;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 12px;
+    margin-left: 5px;
+    pointer-events: none;
+}
+
+.floating-page {
+    height: 80px;
+    width: 140px;
+    top: 160px;
+    left: 570px;
+    position: absolute;
+    background: rgba(240, 240, 240, 0.75);
+    box-sizing: border-box; /* Garantir que a largura e altura incluam a sombra */
+    border-radius: 20px;
+    box-shadow: 0 0 1px black; 
+    border: none;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(2px);
+}
+
+.floating-page ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.floating-page li {
+    margin-left: 20px;
+    margin-top: 1px;
+}
+
+.floating-page li:hover {
+    color: rgb(206,0,86);
+}
+
+.btn-reserva {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-adicionar {
+    padding: 10px 15px;
+    background-color: rgb(206, 0, 86);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Adicione estilos específicos para telas menores */
+/* Adicione estilos específicos para telas menores */
+@media screen and (max-width: 859px) {
+    .btn-reserva {
+        position: static;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 10vw;
+    }
+}
+
+/* Hover */
+.btn-adicionar:hover {
+    background-color: rgb(159, 0, 66);
 }
 
 .box-salas {
     margin: 20px auto; /* Margem superior e inferior de 50px e centraliza horizontalmente */
     display: flex; /* Torna o container flexível */
     flex-direction: column; /* Coloca os itens em uma coluna */
-    justify-content: center; /* Alinha os itens ao topo */
-    align-items: center; /* Alinha os itens horizontalmente ao centro */
+    justify-content: flex-start; /* Alinha os itens ao topo */
+    align-items: flex-start; /* Alinha os itens horizontalmente ao centro */
     background: rgba(240, 240, 240, 0.75);
     box-sizing: border-box; /* Garantir que a largura e altura incluam a sombra */
     border-radius: 20px;
     box-shadow: 0 0 1px black; 
-    height: 80vh; /* Define a altura para ocupar toda a altura da tela */
-    width: 50vw;
+    height: 73.5vh; /* Define a altura para ocupar toda a altura da tela */
+    width: 80vw;
 }
 
-@media screen and (max-width: 859px) {
-    .box-salas {
-        position: static;
-        align-items: center;
-        justify-content: center;
-        margin-top: 50px;
-        width: 80%;
-    }
+.id {
+    display: flex;
+    flex-direction: column;
+}
+
+.id input {
+    margin-bottom: 100px; /* Espaçamento entre os inputs */
+    margin-left: 20px;
+    width: 70px;
+    margin-top: 90px;
+    border: none;
+    box-shadow: 0 0 1px black;
+    border-radius: 10px;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    margin-bottom: 180px;
 }
+
 
 th, td {
     border: none;
@@ -208,13 +328,14 @@ th {
 .id{
     align-items: center;
     justify-content: center;
-    width: 10vw;
+    width: 15vw;
+    height: 70px;
 
 }
 
-.responsavel {
-    width: 20vw;
-    height: 10vh; /* Defina a altura desejada para a sala */
+.sala {
+    width: 60vw;
+    height: 70px;; /* Defina a altura desejada para a sala */
     cursor: pointer;
 }
 

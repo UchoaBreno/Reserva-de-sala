@@ -60,10 +60,3 @@ function fecharInputBox() {
         var inputBox = document.querySelector('.input-box');
         inputBox.style.display = 'none'; // Ocultar a input-box
     }
-
-
-    const name = document.querySelector("option-lab");
-
-    function showLabOptions() {
-        showLabOptions.style.dispay= "flex";
-    }
